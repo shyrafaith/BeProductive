@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/archivo_black"
+            android:text="Create a New Task"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:paddingTop="30dp"
+            android:paddingBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/dateRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="05 June - 08 June"
+            android:textColor="#BBBBBB"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/date1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/calendar_date_background"
+                android:text="June\n05\nWED"
+                android:textColor="#FFFFFF"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/montserrat_extrabold"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <TextView
+                android:id="@+id/date2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/calendar_date_background_default"
+                android:fontFamily="@font/montserrat_extrabold"
+                android:padding="10dp"
+                android:text="JUNE\n06\nTHU"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <TextView
+                android:id="@+id/date3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/calendar_date_background_default"
+                android:fontFamily="@font/montserrat_extrabold"
+                android:padding="10dp"
+                android:text="JUNE\n07\nFRI"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <TextView
+                android:id="@+id/date4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/calendar_date_background_default"
+                android:text="JUNE\n08\nSAT"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/montserrat_extrabold"
+                android:clickable="true"
+                android:focusable="true"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/schedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/montserrat_extrabold"
+            android:text="Schedule"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/taskName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@android:drawable/edit_text"
+            android:fontFamily="@font/montserrat"
+            android:hint="Task Name"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/startTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/edit_text"
+                android:fontFamily="@font/montserrat"
+                android:hint="Start Time"
+                android:inputType="time"
+                android:padding="10dp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/endTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/edit_text"
+                android:fontFamily="@font/montserrat"
+                android:hint="End Time"
+                android:inputType="time"
+                android:padding="10dp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/descText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@android:drawable/edit_text"
+            android:fontFamily="@font/montserrat"
+            android:hint="Task Description"
+            android:inputType="textMultiLine"
+            android:minHeight="100dp"
+            android:padding="10dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/dailyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="sans-serif"
+            android:text="What would you like to save it as?"
+            android:textColor="#FFFFFF"
+            tools:fontFamily="@font/montserrat_semibold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                android:id="@+id/personal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Personal"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/montserrat_semibold"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3700B3"
+            android:text="Create Task"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="15dp"
+            android:fontFamily="@font/montserrat_semibold"/>
+
+    </LinearLayout>
+
+</ScrollView>

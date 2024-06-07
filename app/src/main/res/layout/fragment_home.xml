@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/taskSummaryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_extrabold"
+            android:text="Task Summary"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp"
+            android:paddingTop="30dp"
+            android:paddingBottom="2dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rectangle_9"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tasksTodayTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/montserrat_extrabold"
+                android:text="Today"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp"
+                android:paddingTop="15dp"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/progressTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/montserrat_extrabold"
+                android:text="0 / 10 Task"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/montserrat_extrabold"
+            android:text="To Do"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:paddingTop="25dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/toDoRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:clipToPadding="false"
+            android:paddingBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/montserrat_extrabold"
+            android:text="Small Tasks"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:paddingTop="25dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="16dp">
+
+            <EditText
+                android:id="@+id/smallTaskNote1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add note here"
+                android:background="#333333"
+                android:padding="16dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/smallTaskNote2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add note here"
+                android:background="#333333"
+                android:padding="16dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/smallTaskNote3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add note here"
+                android:background="#333333"
+                android:padding="16dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/saveNotesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save Notes"
+                android:padding="16dp"
+                android:background="#3700B3"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

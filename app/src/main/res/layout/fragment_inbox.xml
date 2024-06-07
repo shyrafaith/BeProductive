@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inbox"
+    android:background="#212121">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/inboxText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/archivo_black"
+            android:text="Inbox"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp"
+            android:paddingBottom="20dp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rectangle_9" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/welcometext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_extrabold"
+                    android:text="Welcome, New User!"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="25dp"/>
+
+                <TextView
+                    android:id="@+id/desciptiontext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserrat"
+                    android:paddingLeft="18dp"
+                    android:text="Start your day by being productive!"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
